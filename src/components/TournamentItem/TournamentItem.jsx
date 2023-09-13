@@ -3,8 +3,11 @@ import "./TournamentItem.scss";
 
 
 function TournamentItem(props) {
-    const {type, registr, name, date, rate, score, fix} = props;
-
+    const {type, registr, name, date, rate, score, fix, time, exit, rapid } = props;
+    const isFix = fix === true;
+    const isTime = time === true;
+    const isExit = exit === true;
+    const isRapid = rapid === true;
 
     return (
         <>
@@ -14,14 +17,14 @@ function TournamentItem(props) {
                 <div className="row">
                     <div className="game">
                        <div className="type">
-                       <svg className="fix" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className={isFix ? "show" : "hide"} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="icon/ type / pin">
                 <path id="Union" opacity="0.6" d="M14.2113 14.3922C14.2131 14.3943 14.2151 14.3963 14.217 14.3982C14.2714 14.4525 14.3559 14.456 14.4059 14.406C14.4559 14.356 14.4524 14.2715 14.3981 14.2172C14.3961 14.2153 14.3941 14.2133 14.3921 14.2115L10.5255 9.33875C10.4634 9.42942 10.3974 9.51711 10.3279 9.60261C10.2163 9.7398 10.0956 9.87121 9.96675 10C9.87816 10.0886 9.78508 10.1737 9.68927 10.2547C9.57477 10.3516 9.45642 10.4426 9.33721 10.5267L14.2113 14.3922Z" fill="white"/>
                 <path id="Union_2" d="M2.15889 6.11406C1.79157 6.14268 1.48105 6.05907 1.27074 5.84876C0.638649 5.21667 1.15106 3.67943 2.41525 2.41525C3.67943 1.15106 5.21667 0.638649 5.84876 1.27074C6.06053 1.48251 6.14383 1.79587 6.11344 2.16653C6.12299 2.2311 6.22083 2.79442 6.7995 3.37309C7.33397 3.90756 8.86973 3.70927 9.26284 3.64817C9.89024 3.48663 10.4061 3.53912 10.7129 3.84588C11.503 4.63599 10.6063 6.81374 8.71002 8.71002C6.81374 10.6063 4.63599 11.503 3.84588 10.7129C3.54667 10.4137 3.48936 9.91549 3.63663 9.30894C3.69031 8.99839 3.93831 7.38488 3.40004 6.84661C2.8034 6.24998 2.15185 6.1211 2.15185 6.1211L2.15889 6.11406Z" fill="#F73054"/>
                 </g>
             </svg>
                         <span className="gameType">{type}</span>
-                        <svg className="timer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className={isTime ? "show" : "hide"} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.7" clip-path="url(#clip0_1492_122)">
                             <rect x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="white"/>
                             <path d="M4.3 5.3C4.7 5.3 5 5 5 4.6C5 4.3 4.7 4 4.3 4C4.3 4 2.3 4.3 2.3 4.6C2.3 5 4.3 5.3 4.3 5.3Z" fill="white"/>
@@ -36,7 +39,7 @@ function TournamentItem(props) {
                             </clipPath>
                             </defs>
                         </svg>
-                        <svg className="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className={isRapid ? "show" : "hide"} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="icon / type / Rapid" opacity="0.7" clip-path="url(#clip0_1492_56)">
                             <rect id="Rectangle 2103" x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="white"/>
                             <path id="rapid 2" d="M8 7L10 2L4 8V9H8L6 14L12 8V7H8Z" fill="white"/>
@@ -47,7 +50,7 @@ function TournamentItem(props) {
                             </clipPath>
                             </defs>
                         </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className={isExit ? "show" : "hide"} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="icon / type / FreeRoll" opacity="0.7" clip-path="url(#clip0_1492_134)">
                             <rect id="Rectangle 2103" x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="white"/>
                             <path id="Vector" d="M11.3 2H5H4V3V4H5V3H8C9.1 3 10 3.9 10 5V11C10 12.1 9.1 13 8 13H5V12H4V13V14H5H10.6C11.9 14 13 12.9 13 11.6V3.7C13 2.8 12.2 2 11.3 2Z" fill="white"/>

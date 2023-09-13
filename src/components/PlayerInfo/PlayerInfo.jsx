@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PlayerInfo.scss"
 
 function PlayerInfo() {
+
     return (
         <div className="info">
             <h2 className="userName">

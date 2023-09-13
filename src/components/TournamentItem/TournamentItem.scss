@@ -42,6 +42,8 @@
     display: flex;
     gap: 4px;
 }
+.hide {display: none;}
+.show {display: block !important;}
 .gameType {
     color: #FFF;
     font-family: Montserrat;
