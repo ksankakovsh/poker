@@ -92,8 +92,15 @@ gap: 4px;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
     width: 79px;
     height: 34px;
+    &.green:hover {
+        background: #43CE72;
+    }
+    &.green:focus {
+        background: #0E8938;
+    }
 }
 .green {background: #00BB40;}
 .gray {background: #5E5A79;}
