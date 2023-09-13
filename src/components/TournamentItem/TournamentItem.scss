@@ -21,13 +21,13 @@
 }
 .registCancel {
     border-radius: 4px 4px 0px 0px;
-    background: #00BB40;
+    
     position: absolute;
-    top: 24px;
+    top: 23px;
     left: -36px;
     transform: rotate(-90deg);
     padding: 2px;
-    width: 76px;
+    width: 74px;
     height: 12px;
     color: #FFF;
     text-align: center;
@@ -38,6 +38,7 @@
     line-height: normal;
     text-transform: uppercase;
 }
+
 .type {
     display: flex;
     gap: 4px;
@@ -82,7 +83,6 @@ gap: 4px;
 
 .btnGame {
     border-radius: 4px;
-    background: #00BB40;
     border: none;
     color: var(--white, #FFF);
     text-align: center;
@@ -95,3 +95,6 @@ gap: 4px;
     width: 79px;
     height: 34px;
 }
+.green {background: #00BB40;}
+.gray {background: #5E5A79;}
+.grayBtn {background: rgba(255, 255, 255, 0.20);color: rgba(255, 255, 255, 0.30);}

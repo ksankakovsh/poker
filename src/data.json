@@ -10,7 +10,8 @@
         "fix": true,
         "time": false,
         "exit": false,
-        "rapid": false
+        "rapid": false,
+        "btn" : "Join table"
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
         "fix": true,
         "time": false,
         "exit": false,
-        "rapid": false
+        "rapid": false,
+        "btn" : "Join table"
     },
     {
         "id": 3,
@@ -36,7 +38,8 @@
         "fix": true,
         "time": true,
         "exit": true,
-        "rapid": false
+        "rapid": false,
+        "btn" : "Cancelled"
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
         "fix": false,
         "time": false,
         "exit": false,
-        "rapid": false
+        "rapid": false,
+        "btn" : "Cancelled"
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
         "fix": false,
         "time": false,
         "exit": false,
-        "rapid": true
+        "rapid": true,
+        "btn" : "Cancelled"
     },
     {
         "id": 6,
@@ -75,6 +80,7 @@
         "fix": false,
         "time": false,
         "exit": false,
-        "rapid": false
+        "rapid": false,
+        "btn" : "Join table"
     }
 ]

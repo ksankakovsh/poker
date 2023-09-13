@@ -38,6 +38,7 @@ function App() {
             time={item.time}
             exit={item.exit}
             rapid={item.rapid}
+            btn={item.btn}
           />
         ))}
         
